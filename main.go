@@ -26,12 +26,12 @@ type Job struct {
 }
 
 func main() {
-	numRoutines := flag.Int("t", 1, "The number of threads to use.")
+	numRoutines := flag.Int("t", 1, "The number of threads to use. Minimum 1.")
 	// summary := flag.Bool("s", false, "Enable if you only want a summary.")
 	// format := flag.String("f", "b", "The format of the output.")
 
 	flag.Usage = func() {
-		fmt.Println("Welcome to the gdu!")
+		fmt.Println("Welcome to gdu!")
 		fmt.Println("\nUsage:")
 		fmt.Printf("  %s [options] [...dirs]\n", os.Args[0])
 		fmt.Println("\nOptions:")
